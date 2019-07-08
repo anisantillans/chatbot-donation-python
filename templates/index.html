@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Chatbot para el Análisis de Donación de Sangre</h1>
+    <h3>Trabajo Final de Inteligencia Artificial</h3>
+    <div>
+      <div id="chatbox">
+        <p class="botText"><span>Hola! Soy Blood Hero.</span></p>
+      </div>
+      <div id="userInput">
+        <input id="textInput" type="text" name="msg" placeholder="Ingrese su mensaje">
+        <input id="buttonInput" type="submit" value="Enviar">
+      </div>
+      <div id= "analisisSentimientos">
+        <input id="buttonAnalysis" type="submit" value="Analizar Sentimientos">
+      </div>
+
+      <script>
+        function getBotResponse() {
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          $.get("/get", { msg: rawText }).done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+        }
+        function getAnalysisResponse(){
+         
+          document.getElementById('analisisSentimientos').scrollIntoView({block: 'start', behavior: 'smooth'});
+          $.get("/getanalysis").done(function(data) {
+            var botHtml = '<p class="analysisText"><span>' + data + '</span></p>';
+            $("#analisisSentimientos").append(botHtml);
+            document.getElementById('analisisSentimientos').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+        }
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+            }
+        });
+        $("#buttonInput").click(function() {
+          getBotResponse();
+        })
+        $("#buttonAnalysis").click(function() {
+          getAnalysisResponse();
+        })
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+Hola
+Hola
+¿Cómo estás?
+Estoy bien, gracias por preguntar. Cómo estás tú?
+¿Cómo estás?
+Estoy bien.
+¿Debilita donar sangre?
+Donar sangre no produce debilidad.
+Quiero donar
+Genial, me puedes comentar más al respecto?
+¿Se puede contraer VIH o alguna otra enfermedad por donar?
+Definitivamente NO.
+¿Debo ayunar antes de donar sangre?
+No debe pedirse a los donantes que ayunen con el propósito de donar sangre.
+¿Estarías dispuesto a donar?
+Está bien.
+dispuesta
+Muy bien! puedes donar en el Centro de Salud más cercano.
+No quiero donar
+¿Por qué?
+No quiero donar
+Es un acto de solidaridad, deberías pensarlo.
