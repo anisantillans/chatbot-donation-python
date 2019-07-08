@@ -1,13 +1,13 @@
 # chatbotBloodDonation
 _Chatbot for the analysis of the blood donation process using sentiment analysis technique_
 
-##Implemented
+## Implemented
 
 Programming language:
 * Python
 
 Framework:
-* Flask (http://flask.pocoo.org/)_
+* Flask (http://flask.pocoo.org/)
 
 Libraries:
 * ChatterBot (https://chatterbot.readthedocs.io/en/stable/setup.html)
