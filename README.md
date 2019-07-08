@@ -1,14 +1,15 @@
 # chatbotBloodDonation
-_Chatbot for the analysis of the blood donation process using sentiment analysis technique
+_Chatbot for the analysis of the blood donation process using sentiment analysis technique_
 
 ##Implemented
-_Programming language:
-_Python
 
-_Framework:
-_Flask (http://flask.pocoo.org/)
+Programming language:
+* Python
 
-_Libraries:
-_ChatterBot (https://chatterbot.readthedocs.io/en/stable/setup.html)
-_TextBlob (https://textblob.readthedocs.io/en/dev/install.html)
-_Statistics (https://docs.python.org/3/library/statistics.html)
+Framework:
+* Flask (http://flask.pocoo.org/)_
+
+Libraries:
+* ChatterBot (https://chatterbot.readthedocs.io/en/stable/setup.html)
+* TextBlob (https://textblob.readthedocs.io/en/dev/install.html)
+* Statistics (https://docs.python.org/3/library/statistics.html)
